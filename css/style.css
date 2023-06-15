@@ -3,13 +3,9 @@
     --hbanner: 150px; /*altezza banner*/
     --padding: 1rem;
     --hlogo: 85px;  /* altezza logo */
-    --hfont: 25px;
+    --m: 30px;
+    --l:35px;
 }
-
-/* ///////////////////////////////////////variabili/////////////////////////////////////////*/
-
-/* ///////////////////////////////////////overflow layout/////////////////////////////////////////*/
-
 body>*,
  .main>* {
    min-width: 100px;
@@ -31,7 +27,17 @@ body{
     flex-grow: 0;
     overflow: hidden;
     flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+h2{
+    color: white;
+    font-size: var(--l);
+}
+/* ///////////////////////////////////////variabili/////////////////////////////////////////*/
+
+/* ///////////////////////////////////////overflow layout/////////////////////////////////////////*/
+
+
 .banner{
     width: 100%;
     flex-shrink: 0;
@@ -41,11 +47,12 @@ body{
     height: var(--hbanner);
 }
 .banner button{
-    height: 50px;
-    width: 250px;
+    height: 70px;
+    width: 400px;
     background-color: #090B12;
     border-color: white;
-    border-radius: 30px;
+    border-radius: 36px;
+    font-size: 24px;
 }
 
 .main-menu{                 /* / / / / / / main section e overflow / / / / / / */
@@ -65,7 +72,7 @@ body{
 .left-nav{                  /* / / / /  nav left / / / / / */
     flex-shrink: 0;
     width: 450px;
-    background-color: black;
+    background-color: rgb(5, 5, 5);
     flex-direction: column;
     justify-content:space-between ;
 }
@@ -81,26 +88,42 @@ body{
 .lat-icon img{
     width: 50px;
     margin-right: var(--padding);
-
 }
 .lat-icon{
     height: 60px;
     align-items: center;
-    font-size: var(--hfont);
+    font-size: var(--m);
     margin: calc( var(--padding) / 2 ) var(--padding);
-
+}
+.ln a{
+    text-decoration: none;
 }
 .user img{
     border-radius: 50%;
     width: 80px;
     aspect-ratio: 1 / 1;
     background-color: grey;
+    margin:1rem;
 }
+.user{
+    margin: var(--padding) var(--padding);
+    align-items: center;
+}
+.bortop{
+    border-top: 1px white solid;
+}
+
 
 .nav-bot{                       /* / / / / / nav bot/ / / / / / */
     height: var(--hbanner);
     background-color: #282828;
     flex-shrink: 0;
 }
-
+.ln .user span {
+    font-size: var(--m);
+}
+.m{      /* / / / / / / / / / /da usare per i titoli playlist / / / / / / / / / / */
+    font-size: 40px;
+    margin:  0rem 1.5rem 0rem 1rem;
+}
  /* ///////////////////////////////////overflow layout////////////////////////////////////// */
