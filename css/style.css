@@ -2,6 +2,7 @@
 :root{
     --hbanner: 150px; /*altezza banner*/
     --padding: 1rem;
+    --hlogo: 70px;  /* altezza logo */
 }
 
 /* ///////////////////////////////////////variabili/////////////////////////////////////////*/
@@ -69,14 +70,13 @@ body{
 }
 .logo {
     height: var(--hbanner);
+    padding: calc( (150px - var(--hlogo) ) / 2 ) var(--padding);
 
 }
 
 .logo img{
     display: inline-block;
-    width: 70%;
-
-
+    height: var(--hlogo);
 }
 
 .nav-bot{                       /* / / / / / nav bot/ / / / / / */
