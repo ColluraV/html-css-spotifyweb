@@ -2,7 +2,8 @@
 :root{
     --hbanner: 150px; /*altezza banner*/
     --padding: 1rem;
-    --hlogo: 70px;  /* altezza logo */
+    --hlogo: 85px;  /* altezza logo */
+    --hfont: 25px;
 }
 
 /* ///////////////////////////////////////variabili/////////////////////////////////////////*/
@@ -20,7 +21,7 @@ body>*,
     padding: 0;
     box-sizing: border-box;
     border: 1px dashed red;
-    color: white;
+    color: rgba(255, 255, 255, 0.466);
 }
 .flex{
     display: flex;
@@ -63,20 +64,37 @@ body{
 
 .left-nav{                  /* / / / /  nav left / / / / / */
     flex-shrink: 0;
-    width: 300px;
+    width: 450px;
     background-color: black;
     flex-direction: column;
-
+    justify-content:space-between ;
 }
 .logo {
     height: var(--hbanner);
     padding: calc( (150px - var(--hlogo) ) / 2 ) var(--padding);
-
 }
 
 .logo img{
     display: inline-block;
     height: var(--hlogo);
+}
+.lat-icon img{
+    width: 50px;
+    margin-right: var(--padding);
+
+}
+.lat-icon{
+    height: 60px;
+    align-items: center;
+    font-size: var(--hfont);
+    margin: calc( var(--padding) / 2 ) var(--padding);
+
+}
+.user img{
+    border-radius: 50%;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    background-color: grey;
 }
 
 .nav-bot{                       /* / / / / / nav bot/ / / / / / */
