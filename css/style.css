@@ -44,19 +44,22 @@
     flex-shrink: 0;
   }
 */
-
-body>*,
-.main>* {
-  min-width: 100px;
-  min-height: 100px;
-  font-size: 100px;
-
+/* ///////////////////////////////////////variabili/////////////////////////////////////////*/
+:root{
+    --hbanner: 150px; /*altezza banner*/
+    --padding: 1rem;
 }
+
+/* ///////////////////////////////////////variabili/////////////////////////////////////////*/
+
+/* ///////////////////////////////////////overflow layout/////////////////////////////////////////*/
+
  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 1px dashed red;
+    color: white;
 }
 .flex{
     display: flex;
@@ -68,23 +71,53 @@ body{
     flex-direction: column;
 }
 .banner{
-    height: 100px;
+    width: 100%;
+    height: var(--hbanner);
     flex-shrink: 0;
+    background-color: #090B12;
+    align-items: center;
+    justify-content: end;
 }
-.main-menu{
-    flex-direction: column;
-}
+.banner button{
+    height: 50px;
+    background-color: #090B12;
+    border-color: white;
+    border-radius: 30px;
+    padding: auto var(--padding);
 
-.left-nav{
-    flex-shrink: 0;
-    width: 300px;
+}/**/
+
+.main-menu{                 /* / / / / / / main section e overflow / / / / / / */
+    flex-direction: column;
 }
 .overflow {
     overflow: auto;
     flex-grow: 1;
- }
-/*
-    .nav-bot{
-    height: 100px;
+    background-color: #141922;
+    font-size: 100px;
 }
-*/
+
+.left-nav{                  /* / / / /  nav left / / / / / */
+    flex-shrink: 0;
+    width: 300px;
+    background-color: black;
+    flex-direction: column;
+}
+.logo {
+    height: var(--hbanner);
+    padding: 14%;
+}
+
+.logo img{
+    display: inline-block;
+    width: 100%;
+}
+
+.nav-bot{                       /* / / / / / nav bot/ / / / / / */
+    height: var(--hbanner);
+    background-color: #282828;
+    flex-shrink: 0;
+}
+
+ /* ///////////////////////////////////overflow layout////////////////////////////////////// */
+
