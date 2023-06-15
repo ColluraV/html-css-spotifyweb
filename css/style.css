@@ -1,15 +1,17 @@
 /* ///////////////////////////////////////variabili/////////////////////////////////////////*/
 :root{
-    --hbanner: 150px; /*altezza banner*/
-    --padding: 1rem;
-    --hlogo: 85px;  /* altezza logo */
-    --m: 30px;
-    --l:35px;
+    --hbanner: 60px; /*altezza banner*/
+    --padding: 0.8rem;
+    --hlogo: 45px;  /* altezza logo */
+    --m: 16px;
+    --l: 20px;        /* * * altezza font divisa in m l xl * * */
+    --leftcol:rgb(3, 3, 3);
+
 }
 body>*,
  .main>* {
    min-width: 100px;
-   min-height: 100px;
+   min-height: 20px;
   }
 
 *{
@@ -33,6 +35,13 @@ h2{
     color: white;
     font-size: var(--l);
 }
+.m{
+    font-size: var(--m);
+}
+.l{      /* / / / / / / / / / /da usare per i titoli playlist / / / / / / / / / / */
+    font-size: var(--l);
+}
+
 /* ///////////////////////////////////////variabili/////////////////////////////////////////*/
 
 /* ///////////////////////////////////////overflow layout/////////////////////////////////////////*/
@@ -47,12 +56,12 @@ h2{
     height: var(--hbanner);
 }
 .banner button{
-    height: 70px;
-    width: 400px;
+    height: 50px;
+    width: 250px;
     background-color: #090B12;
     border-color: white;
-    border-radius: 36px;
-    font-size: 24px;
+    border-radius: 30px;
+    font-size: 15px;
 }
 
 .main-menu{                 /* / / / / / / main section e overflow / / / / / / */
@@ -65,20 +74,20 @@ h2{
     overflow: auto;
     flex-grow: 1;
     background-color: #141922;
-    font-size: 2rem;
+    font-size: 3rem;
     height: 100%;
 }
 
 .left-nav{                  /* / / / /  nav left / / / / / */
     flex-shrink: 0;
-    width: 450px;
-    background-color: rgb(5, 5, 5);
+    width: 250px;
+    background-color: var(--leftcol);
     flex-direction: column;
     justify-content:space-between ;
 }
 .logo {
     height: var(--hbanner);
-    padding: calc( (150px - var(--hlogo) ) / 2 ) var(--padding);
+    padding: calc( (var(--hbanner) - var(--hlogo) ) / 2 ) var(--padding);
 }
 
 .logo img{
@@ -86,11 +95,11 @@ h2{
     height: var(--hlogo);
 }
 .lat-icon img{
-    width: 50px;
+    width: calc(2 * var(--m) );
     margin-right: var(--padding);
 }
 .lat-icon{
-    height: 60px;
+    height: 40px;
     align-items: center;
     font-size: var(--m);
     margin: calc( var(--padding) / 2 ) var(--padding);
@@ -98,32 +107,51 @@ h2{
 .ln a{
     text-decoration: none;
 }
+.hide .flex.user h1{
+    color: var(--leftcol) ;
+    width: 40px;
+    background-color: gray;
+    text-align: center;
+    line-height: 40px;
+    font-size: var(--l);
+}
+
 .user img{
     border-radius: 50%;
-    width: 80px;
+    width: 35px;
     aspect-ratio: 1 / 1;
     background-color: grey;
-    margin:1rem;
+    margin:0.5rem;
 }
 .user{
-    margin: var(--padding) var(--padding);
+    margin: 0.5rem var(--padding);
     align-items: center;
 }
 .bortop{
     border-top: 1px white solid;
 }
 
-
-.nav-bot{                       /* / / / / / nav bot/ / / / / / */
+.nav-bot{                       /* / / / / / nav bot/ / / / / / */        
     height: var(--hbanner);
     background-color: #282828;
     flex-shrink: 0;
-}
+} 
 .ln .user span {
     font-size: var(--m);
+
 }
-.m{      /* / / / / / / / / / /da usare per i titoli playlist / / / / / / / / / / */
-    font-size: 40px;
+.hide .l, .hide h2{
+    margin-left: var(--padding);
+}
+.hide h2{
+    margin-top: 2rem;
+}
+.nome{
+    line-height: 20px;
+    font-size: var(--m);
+    margin: 2px var(--padding);
+}
+.fa-circle-down.l {
     margin:  0rem 1.5rem 0rem 1rem;
 }
  /* ///////////////////////////////////overflow layout////////////////////////////////////// */

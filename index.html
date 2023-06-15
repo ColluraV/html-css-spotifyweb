@@ -13,25 +13,39 @@
 
 <body class="flex">
     <div class="main flex">
-        <div class="left-nav flex">
-            <div>
+        <div class="left-nav flex"> <!-- nav laterale   -->
+            <div class="ln">
                 <div class="logo"><img src="img/logo.svg" alt=""></div>
-                <div class="lat-icon flex"><img src="img/home.svg" alt=""> Home </div>
-                <div class="lat-icon flex"><img src="img/search.svg" alt=""> Cerca </div>
-                <div class="lat-icon flex"><img src="img/libreria.svg" alt=""> La Tua libreria</div>
-            </div>
-            <div>
-                <div>
-                    <i class="fa-regular fa-circle-down"></i> Installa app
+                <div class="lat-icon flex"><img src="img/home.svg" alt=""> <a class="hide" href="">Home </a></div>
+                <div class="lat-icon flex"><img src="img/search.svg" alt=""> <a class="hide" href=""> Cerca </a></div>
+                <div class="lat-icon flex"><img src="img/libreria.svg" alt=""><a class="hide" href=""> La Tua libreria </a></div>
+
+                
+                <div class="hide"> <!-- da nascondere con media queue  -->
+                    <h2> PLAYLIST </h2>
+                    <div class="flex user" > <h1>+</h1> <div class="l"> Crea Playlist </div></div>
+
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
                 </div>
+            </div>
+            <div class="ln">
                 <div class="user flex">
+                    <a href=""><i class="fa-regular fa-circle-down l"></i></a><span> Installa app</span>
+                </div>
+                <div class="user bortop flex">
                     <img src="img/profile.svg" alt="">
-                    <h2>Jhonny Stecchino</h2>
+                    <h2><a href="">Jhon Doe</a></h2>
                 </div>
             </div>
-        </div>
+        </div> <!--  main scrollabile   -->
         <div class="main-menu flex">
-            <div class="banner flex"> <button> EFFETTUA L'UPGRADE </button> </div>
+            <div class="banner flex"> <button> EFFETTUA L'UPGRADE </button> </div> <!--  <--banner singolo top    -->
             <div class="overflow"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus enim, consequuntur
                 atque cumque amet
                 obcaecati. Aperiam perferendis voluptas dolore suscipit esse architecto porro perspiciatis, distinctio
