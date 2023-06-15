@@ -1,0 +1,88 @@
+/*                   / / / / / / // / / / / /FLORIAN / / / / / / / / // / / 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    per evitare che in caso di errore nei figli compaia la scrollbar generale,
+     la nascondiamo di default 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+   SOLO TEMPORANEAMENTE perché non c'è contenuto.
+  poi sarà da togliere 
+  body>*,
+  .main-container>* {
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid red;
+  }
+  
+  .play-nav-container {
+    flex-shrink: 0;
+  }
+  
+  .main-container {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+  }
+  
+  .main-content-container {
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .navbar {
+    width: 200px;
+    overflow: auto;
+    flex-shrink: 0;
+  }
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed red;
+}
+body{
+    height: 100hv;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+}
+body>*,
+.main>* {
+  min-width: 100px;
+  min-height: 100px;
+}
+.main{
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+.left-nav{
+    flex-shrink: 0;
+    height: 100%;
+}
+.main-container {
+    overflow: auto;
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+  }
+  .main-menu {
+    flex-grow: 1;
+  }
+.nav-bot{
+    height: 100px;
+}
