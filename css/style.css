@@ -64,28 +64,12 @@ h2{
     font-size: 15px;
 }
 
-.main-menu{                 /* / / / / / / main section e overflow / / / / / / */
-    flex-direction: column;
-    width: 100%;
-}
-.main{
-    height: 100%;
-}
-.overflow {
-    overflow: auto;
-    flex-grow: 1;
-    background-color: #141922;
-    font-size: 3rem;
-    height: 100%;
-    width: 100%;
-}
 
 .left-nav{                  /* / / / /  nav left / / / / / */
     flex-shrink: 0;
     width: 250px;
     background-color: var(--leftcol);
     flex-direction: column;
-    /*justify-content:space-between ;*/
 }
 .logo {
     height: var(--hbanner);
@@ -120,9 +104,7 @@ h2{
 .ln{
     flex-shrink: 0;
     flex-direction: column;
-
 }
-
 
 .user img{
     border-radius: 50%;
@@ -177,3 +159,56 @@ h2{
     margin:  0rem 1.5rem 0rem 1rem;
 }
  /* ///////////////////////////////////overflow layout////////////////////////////////////// */
+ .main-menu{                 /* / / / / / / main section e overflow / / / / / / */
+    flex-direction: column;
+    width: 100%;
+}
+.main{
+    height: 100%;
+}
+
+ .overflow {
+    overflow: auto;
+    flex-grow: 1;
+    background-color: #141922;
+    height: 100%;
+    width: 100%;
+}
+
+                /* / / / / / / lista brani / / / / / / */
+#generi{
+    flex-wrap: wrap; 
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.genere{
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 15px;
+}
+.high{
+    width: 50%;
+    height: 2px;
+    background-color: transparent;
+    margin: 2px auto ;
+}
+  
+.container{
+    flex-wrap: wrap;
+}
+.card{
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    min-width: 200px;
+    margin: 5px;
+}
+.card img{
+    width: 100%;
+}
+.card h2, .card p{
+    margin-top: var(--padding);
+}

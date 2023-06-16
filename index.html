@@ -9,6 +9,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Spotify Pezzotto</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="flex">
@@ -16,43 +17,45 @@
         <div class="left-nav flex"> <!-- nav laterale   -->
             <div class="ln flex">
                 <div class="logo"><img src="img/logo.svg" alt=""></div>
-                <div class="flex overcol">   <!-- container icone   -->
+                <div class="flex overcol"> <!-- container icone   -->
                     <div class="lat-icon flex"><img src="img/home.svg" alt=""> <a class="hide" href="">Home </a></div>
-                    <div class="lat-icon flex"><img src="img/search.svg" alt=""> <a class="hide" href=""> Cerca </a></div>
-                    <div class="lat-icon flex"><img src="img/libreria.svg" alt=""><a class="hide" href=""> La Tua libreria
-                    </a></div>
+                    <div class="lat-icon flex"><img src="img/search.svg" alt=""> <a class="hide" href=""> Cerca </a>
+                    </div>
+                    <div class="lat-icon flex"><img src="img/libreria.svg" alt=""><a class="hide" href=""> La Tua
+                            libreria
+                        </a></div>
                 </div>
             </div>
-                <div class="playlist hide flex overcol"> <!-- da nascondere con media queue  -->
-                    <h2> PLAYLIST </h2>
-                    <div class="flex user">
-                        <h1>+</h1>
-                        <div class="l"> Crea Playlist </div>
-                    </div>
-
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
-                    <div class="nome"> Nome Playlist </div>
+            <div class="playlist hide flex overcol"> <!-- da nascondere con media queue  -->
+                <h2> PLAYLIST </h2>
+                <div class="flex user">
+                    <h1>+</h1>
+                    <div class="l"> Crea Playlist </div>
                 </div>
+
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+                <div class="nome"> Nome Playlist </div>
+            </div>
 
             <div class="ln flex overcol">
                 <div class="user flex">
@@ -66,7 +69,49 @@
         </div> <!--  main scrollabile   -->
         <div class="main-menu flex">
             <div class="banner flex"> <button> EFFETTUA L'UPGRADE </button> </div> <!--  <--banner singolo top    -->
-            <div class="overflow"> 
+            <div class="overflow">
+                <div id="generi" class=" flex">
+                    <div class="genere">
+                        <span> IN EVIDENZA </span>
+                        <div class="high"></div>
+                    </div>
+                    <div class="genere">
+                        <span> PODCAST </span>
+                        <div class="high"></div>
+                    </div>
+                    <div class="genere">
+                        <span> CLASSIFICHE </span>
+                        <div class="high"></div>
+                    </div>
+                    <div class="genere">
+                        <span> GENERI E MOOD </span>
+                        <div class="high"></div>
+                    </div>
+                    <div class="genere">
+                        <span> NUOVE USCITE </span>
+                        <div class="high"></div>
+                    </div>
+                    <div class="genere">
+                        <span> SCOPRI </span>
+                        <div class="high"></div>
+                    </div>
+                </div>
+                <div class="container flex overcol"> <!-- container genere albums-->
+                    <div class="alb-lyst">
+                        <h1> Recently played</h1>
+                        <p></p>
+                        <div class="container flex"> 
+                            <div class="card flex ">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <h2> Heavy Metal </h2>
+                                <p> subtitle </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
 
         </div>
