@@ -19,7 +19,7 @@ body>*,
     padding: 0;
     box-sizing: border-box;
     border: 1px dashed red;
-    color: rgba(255, 255, 255, 0.466);
+    color: rgba(255, 255, 255, 0.679);
 }
 .flex{
     display: flex;
@@ -83,7 +83,7 @@ h2{
     width: 250px;
     background-color: var(--leftcol);
     flex-direction: column;
-    justify-content:space-between ;
+    /*justify-content:space-between ;*/
 }
 .logo {
     height: var(--hbanner);
@@ -102,18 +102,26 @@ h2{
     height: 40px;
     align-items: center;
     font-size: var(--m);
-    margin: calc( var(--padding) / 2 ) var(--padding);
+    padding: calc( var(--padding) / 2 ) var(--padding);
 }
 .ln a{
     text-decoration: none;
 }
 .hide .flex.user h1{
     color: var(--leftcol) ;
-    width: 40px;
+    width: 35px;
     background-color: gray;
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
     font-size: var(--l);
+}
+.ln{
+    flex-shrink: 0;
+    flex-direction: column;
+
+}
+.left-nav.flex .ln.flex{
+    flex-grow: 1;
 }
 
 .user img{
@@ -129,6 +137,14 @@ h2{
 }
 .bortop{
     border-top: 1px white solid;
+
+}
+.playlist{
+    flex-direction: column;
+    height: 100px;
+}
+.mtop{
+    margin-top: auto;
 }
 
 .nav-bot{                       /* / / / / / nav bot/ / / / / / */        
@@ -138,9 +154,8 @@ h2{
 } 
 .ln .user span {
     font-size: var(--m);
-
 }
-.hide .l, .hide h2{
+.hide .l{
     margin-left: var(--padding);
 }
 .hide h2{
