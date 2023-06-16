@@ -7,7 +7,7 @@
     --l: 18px;
     --leftcol: rgb(3, 3, 3);
 
-    --colhover: rgba(91, 91, 91, 0.307);
+    --colhover: rgba(91, 91, 91, 0.235);
 }
 
 body>*,
@@ -21,7 +21,7 @@ body>*,
     padding: 0;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.679);
-    /*border: 1px dashed red;*/
+    border: 1px dashed red;
 }
 
 .flex {
@@ -256,6 +256,8 @@ display: none;
     align-items: center;
     width: calc((100% / 6) - var(--padding));
     min-width: 175px;
+    border-radius: 20px;
+    position: relative;
 }
 
 .gap {
@@ -264,7 +266,23 @@ display: none;
 
 .card img {
     width: 100%;
+    margin-top: 20px;
+
 }
+.absolute{              /* * * * * * * * * * * * * * * * * * * overlay play * * * * * * * * * * * * * * * * * * */
+ position: absolute;
+ font-size: 60px;
+
+ padding: auto;
+ display: none;
+ width: 100%;
+ height: 100%;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.668);
+border-radius: 15px;
+}
+
 
 .card h2,
 .card p {
@@ -357,6 +375,11 @@ display: none;
 .genere:hover{
     background-color: var(--colhover);
 }
+.genere:hover span{
+    color:white;
+}
+
+
 
 .banner button:hover, .bortop:hover, .borbot:hover  {
     background-color: var(--colhover);
@@ -374,5 +397,8 @@ display: none;
     font-size: 1.1rem;
 }
 .special:hover .playlist{
+    display: flex;
+}
+.card:hover .absolute{
     display: flex;
 }
