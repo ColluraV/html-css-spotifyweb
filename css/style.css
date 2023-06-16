@@ -66,6 +66,7 @@ h2{
 
 .main-menu{                 /* / / / / / / main section e overflow / / / / / / */
     flex-direction: column;
+    width: 100%;
 }
 .main{
     height: 100%;
@@ -76,6 +77,7 @@ h2{
     background-color: #141922;
     font-size: 3rem;
     height: 100%;
+    width: 100%;
 }
 
 .left-nav{                  /* / / / /  nav left / / / / / */
@@ -120,9 +122,7 @@ h2{
     flex-direction: column;
 
 }
-.left-nav.flex .ln.flex{
-    flex-grow: 1;
-}
+
 
 .user img{
     border-radius: 50%;
@@ -140,11 +140,18 @@ h2{
 
 }
 .playlist{
-    flex-direction: column;
     height: 100px;
+    overflow: auto;
 }
 .mtop{
     margin-top: auto;
+}
+.overcol{
+    flex-grow: 1;
+    flex-direction: column;
+}
+.ln.overcol{
+    flex-grow: 0;
 }
 
 .nav-bot{                       /* / / / / / nav bot/ / / / / / */        
