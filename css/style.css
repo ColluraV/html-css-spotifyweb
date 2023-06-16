@@ -6,7 +6,7 @@
     --hlogo: 45px;
     /* altezza logo */
     --m: 16px;
-    --l: 20px;
+    --l: 18px;
     /* * * altezza font divisa in m l xl * * */
     --leftcol: rgb(3, 3, 3);
 
@@ -41,6 +41,7 @@ body {
 h2 {
     color: white;
     font-size: var(--l);
+
 }
 
 .m {
@@ -78,8 +79,9 @@ h2 {
 
 .left-nav {
     /* / / / /  nav left / / / / / */
-    flex-shrink: 0;
-    width: 250px;
+width: 20%;
+    min-width: 180px;
+    max-width: 250px;
     background-color: var(--leftcol);
     flex-direction: column;
 }
@@ -198,6 +200,7 @@ display: none;
     /* / / / / / / main section e overflow / / / / / / */
     flex-direction: column;
     width: 100%;
+    background-color: #141922;
 }
 
 .main {
@@ -207,7 +210,6 @@ display: none;
 .overflow {
     overflow: auto;
     flex-grow: 1;
-    background-color: #141922;
     height: 100%;
     width: 100%;
 }
@@ -219,6 +221,7 @@ display: none;
     max-width: 900px;
     margin: 0 auto;
     margin-top: 10px;
+
 }
 
 .genere {
@@ -262,6 +265,7 @@ display: none;
 .card h2,
 .card p {
     margin-top: var(--padding);
+    text-align: center;
 }
 
 .round {
@@ -319,12 +323,15 @@ display: none;
     .left-nav {
         width: var(--hbanner);
         justify-content: space-between;
+        min-width: var(--hbanner);
+
     }
     .user {
         margin: 0.5rem 0;
         align-items: center;
         justify-content: center;
     }
+
 }
 @media screen and (max-width:450px) {
     .card {
