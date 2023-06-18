@@ -29,7 +29,7 @@
             <div class=" hide special flex overcol">
                 <h2> PLAYLIST </h2>
                 <div class="flex user">
-                    <h1>+</h1>
+                    <div class="plus"><i class="fa-solid fa-square-plus"></i></div>
                     <div class="l"> Crea Playlist </div>
                 </div>
 
@@ -66,8 +66,8 @@
                         <div class="nome"> Nome Playlist </div>
                         <div class="nome"> Nome Playlist </div>
                     </div>
-                </div> 
-            </div>    <!-- / / / / / / / / / /FINE LISTA PLAYLIST NASCONDIBILE E OVERFLOW  / / / / / / / / / -->
+                </div>
+            </div> <!-- / / / / / / / / / /FINE LISTA PLAYLIST NASCONDIBILE E OVERFLOW  / / / / / / / / / -->
             <div class="ln flex overcol">
                 <div class="user borbot flex">
                     <a href=""><i class="fa-regular fa-circle-down l"></i></a><span class="hide"> Installa app</span>
@@ -125,26 +125,41 @@
                                 <img src="img/stranger.jpeg" alt="">
                                 <h2> Stranger Things, vol1 - An original Netflix's series soundtrack </h2>
                                 <p> Kyle Dixon </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img src="img/aquietplace.jpeg" alt="">
                                 <h2> A Quite Place </h2>
                                 <p> Shhhhhhhh </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img src="img/split.jpeg" alt="">
                                 <h2> Split </h2>
                                 <p> sub - title</p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img src="img/cure.jpeg" alt="">
                                 <h2> A cure for wellness </h2>
                                 <p> Onde neurali </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img src="img/sinister.jpeg" alt="">
                                 <h2> Sinister </h2>
                                 <p> Boooooooooooooh </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,11 +172,17 @@
                                 <img src="img/radar.jpeg" alt="">
                                 <h2> Release Radar </h2>
                                 <p></p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img src="img/mixdaily.jpeg" alt="">
                                 <h2> Heavy Metal </h2>
                                 <p></p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,11 +195,17 @@
                                 <img class="round" src="img/einaudi.jpeg" alt="">
                                 <h2> Ennio Annio </h2>
                                 <p> Grande amico di maccio capatonda </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                             <div class="card flex "> <!--card album-->
                                 <img class="round" src="img/youg.jpeg" alt="">
                                 <h2> Lana del Raggio </h2>
                                 <p> Allegria come se piovesse </p>
+                                <div class="absolute play">
+                                    <i class="fa-regular fa-circle-play" style="color: #fcfcfc;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,8 +216,33 @@
     </div>
     </div>
     <div class="nav-bot flex">
-        <div class="play-left"></div>
-        <div class="play-mid"></div>
+        <div class="play-left flex">
+            <img src="img/sinister.jpeg" alt="">
+
+            <div class="didascalia hide">
+                <h2> Sinister </h2>
+                <p> Brano Nome </p>               
+            </div>
+        </div>
+        <div class="play-mid flex overcol">
+            <div class="container play flex">
+                <div class="play-icon"><i class="fa-solid fa-shuffle round" style="color: #ffffff;"></i></div>
+               <div class="play-icon"> <i class="fa-solid fa-backward-step round" style="color: #ffffff;"></i></div>
+                <div class="play-icon play"><i class="fa-regular fa-circle-play round" style="color: #fafafa;"></i></div>
+                <div class="play-icon"><i class="fa-solid fa-forward-step round" style="color: #ffffff;"></i></div>
+                <div class="play-icon"><i class="fa-solid fa-arrow-rotate-right round" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="container flex tempo">
+                <div id="trascorsi"></div>
+                <div id="barra-tempo">
+                    <div class="barra grigio flex">
+                        <div class="barra bianco"></div>
+                    </div>
+                </div>
+                <div id="totali"></div>
+
+            </div>
+        </div>
         <div class="play-right"></div>
     </div>
 
