@@ -8,7 +8,7 @@
     --l: 18px;
     --xl:25px;
     --leftcol: rgb(3, 3, 3);
-
+    --bianco: white;
     --colhover: rgba(91, 91, 91, 0.235);
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 h2 {
-    color: white;
+    color: var(--bianco);
     font-size: var(--l);
 }
 
@@ -57,7 +57,6 @@ h2 {
 
 /* ///////////////////////////////////////overflow layout/////////////////////////////////////////*/
 
-
 .banner {
     width: 100%;
     flex-shrink: 0;
@@ -71,7 +70,7 @@ h2 {
     height: 50px;
     width: 250px;
     background-color: #090B12;
-    border-color: white;
+    border-color: var(--bianco);
     border-radius: 30px;
     font-size: var(--m);
 }
@@ -108,7 +107,6 @@ display: none;
 }
 
 .lat-icon {
-
     align-items: center;
     font-size: var(--m);
     padding: calc(var(--padding) / 2) var(--padding);
@@ -146,9 +144,8 @@ display: none;
     margin: 0px var(--padding);
 }
 .bortop {
-    border-top: 1px white solid;
+    border-top: 1px var(--bianco) solid;
     margin-top: 0;
-
 }
 
 .playlist {
@@ -192,7 +189,7 @@ display: none;
 .nome {
     line-height: 20px;
     font-size: var(--m);
-    margin: 2px var(--padding);
+    margin: 5px var(--padding);
 }
 
 .fa-circle-down.l {
@@ -225,7 +222,6 @@ display: none;
     max-width: 900px;
     margin: 0 auto;
     margin-top: 10px;
-
 }
 
 .genere {
@@ -260,7 +256,6 @@ display: none;
     width: calc((100% / 6) - var(--padding));
     min-width: 175px;
     border-radius: 20px;
-
 }
 
 .gap {
@@ -269,8 +264,9 @@ display: none;
 
 .card img {
     width: 100%;
-
-
+}
+.tondo{
+    border-radius: 50%;
 }
                         /* * * * * * * * * * * * * * * * * * * play footer * * * * * * * * * * * * * * * * * * */
 
@@ -316,18 +312,17 @@ display: none;
     max-width: 300px;
     width: 80%;
     margin: 0 auto;
-
-
 }
     
 .play-icon{
     text-align: center;
     aspect-ratio: 1/1;
+    margin: 0 auto;
 }
 
 .play-icon i{
-    font-size: 28px;
-    margin-top: 10px;
+    font-size: 34px;
+    margin-top: 12px;
     flex-shrink: 0; 
     flex-grow: 0;  
 }
@@ -358,17 +353,15 @@ flex-shrink: 0;
     border-radius: 5px;
 }
 .bianco{
-    background-color: white;
+    background-color: var(--bianco);
     width: 35%;
     border-radius: 5px;
 }
 #totali , #trascorsi {
-    font-size:var(--s);
+    font-size:var(--m);
     text-align: center;
 
     }
-
-
 
     .play-right .container{              /*  *   *   *   *   *   *   *   *   *  centro player  *   *   *   *   *   *   *   *   */
     padding: 0;
@@ -392,7 +385,7 @@ flex-shrink: 0;
 
  width: 100%;
  height: 100%;
-translate: 0 -100%;
+ translate: 0 -100%;
 
 }
 .relative{
@@ -443,11 +436,13 @@ background-color: rgba(0, 0, 0, 0.668);
     }
     .logo {
         height: auto;
-        padding: auto;
         width: 100%;
     }
     .big{
         width: 100%;
+    }
+    #totali , #trascorsi {
+        font-size:var(--s);
     }
 }
 
@@ -461,10 +456,6 @@ background-color: rgba(0, 0, 0, 0.668);
         width: 30%;
         max-width: 180px;
     }
-    /*.ln .user .hide{
-        font-size: 0.8rem;
-    }*/
-
 }
 @media screen and (max-width:600px) {
     .card {
@@ -530,8 +521,9 @@ background-color: rgba(0, 0, 0, 0.668);
     .play-left img{
         max-height: 98%;
         margin: 0 auto;
-
-
+    }
+    .volume{
+        transform: rotate(270deg);
     }
 }
 
@@ -543,18 +535,12 @@ background-color: rgba(0, 0, 0, 0.668);
 .genere:hover .high{
     background-color: chartreuse;
 }
-/*.genere:hover, .hover:hover {
-    background-color: var(--colhover);
-}*/
 .genere:hover span{
-    color:white;
+    color:var(--bianco);
 }
-
-
-
 .banner button:hover, .bortop:hover, .borbot:hover  {
     background-color: var(--colhover);
-    color: white;
+    color: var(--bianco);
 }
 .lat-icon:hover img{
     border-color: chartreuse;
@@ -564,7 +550,7 @@ background-color: rgba(0, 0, 0, 0.668);
     background-color: rgba(255, 255, 255, 0.05);
 }
 .lat-icon:hover a{
-    color: white;
+    color: var(--bianco);
     font-size: 1.1rem;
 }
 .special:hover .playlist{
@@ -573,3 +559,19 @@ background-color: rgba(0, 0, 0, 0.668);
 .card:hover .absolute.play i{
     display: inline-block;
 }
+
+.play-icon:hover i {
+    transform: scale( 1.2);}
+.banner button:hover {
+        transform: scale( 1.2);
+        margin-right: 30px ;
+    }
+.barra.bianco:hover{
+        background-color: rgb(0, 255, 0);
+    }
+.user .l:hover{
+        color: var(--bianco);
+    }
+.nome:hover{
+        color: var(--bianco);
+    }
