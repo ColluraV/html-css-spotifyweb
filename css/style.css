@@ -23,7 +23,7 @@ body>*,
     padding: 0;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.679);
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
 }
 
 .flex {
