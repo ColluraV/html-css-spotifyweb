@@ -3,6 +3,7 @@
     --hbanner: 100px; /*altezza banner*/
     --padding: 0.8rem;
     --hlogo: 50px;/* altezza logo */
+    --s: 12px;
     --m: 16px;/* * * altezza font  * * */
     --l: 18px;
     --xl:25px;
@@ -22,7 +23,7 @@ body>*,
     padding: 0;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.679);
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
 }
 
 .flex {
@@ -257,7 +258,7 @@ display: none;
     width: calc((100% / 6) - var(--padding));
     min-width: 175px;
     border-radius: 20px;
-    position: relative;
+
 }
 
 .gap {
@@ -267,19 +268,17 @@ display: none;
 .card img {
     width: 100%;
     margin-top: 20px;
-
+    position: relative;
 }
                         /* * * * * * * * * * * * * * * * * * * play footer * * * * * * * * * * * * * * * * * * */
 
                         /*  *   *   *   *   *   *   *   *   *  sinistra player  *   *   *   *   *   *   *   *   */
 .play-left, .play-right{            /*come left-nav */
     width: 20%;
-    min-width: calc( var(--hbanner) + ( 2* var(--padding) ) ) ;
     max-width: 250px;
     height: 100%;
     align-items: center;
-    flex-grow: 0;
-    flex-shrink: 0;
+
 }
 .didascalia{
     min-width: 50px;
@@ -305,17 +304,15 @@ display: none;
 
 .play-mid{              /*  *   *   *   *   *   *   *   *   *  centro player  *   *   *   *   *   *   *   *   */
    flex-grow: 1;
-   min-width: 33vw; 
+   min-width: 240px; 
 }
-.play-mid .container{
-    height: 100%;
-}
+
 .container.play {
-    height: 50%;
+    height: 60%;
     padding: 0;
     min-width: 235px;
     max-width: 300px;
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
 
 
@@ -331,11 +328,12 @@ display: none;
 
 .play-icon i{
     font-size: 28px;
-    padding: 0; 
+    margin-top: 10px;
     flex-shrink: 0; 
     flex-grow: 0; 
-    width: 40px;
-    line-height: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
 }
 .play-icon.play{
     margin: 0 1rem;
@@ -350,22 +348,47 @@ min-width:40px;
 flex-grow: 0;
 flex-shrink: 0;
 }
-#barra-tempo{
+.barra-tempo{
     flex-grow: 1;
     height: 8px;
     align-self: center;
-    border-radius: 5px;
+
 }
 .barra{
     height: 100%;
 }
 .grigio{
     background-color: gray;
+    border-radius: 5px;
 }
 .bianco{
     background-color: white;
     width: 35%;
+    border-radius: 5px;
 }
+#totali , #trascorsi {
+    font-size:var(--s);
+    text-align: center;
+
+    }
+
+
+
+    .play-right .container{              /*  *   *   *   *   *   *   *   *   *  centro player  *   *   *   *   *   *   *   *   */
+    padding: 0;
+    width: 40%;
+    }
+    
+    .fa-volume{
+        width: 20px;
+    }
+
+    .play-right .container i{
+        margin: 0 auto;
+    }
+    .volume{
+        width: 105px;
+    }
 
 .absolute{              /* * * * * * * * * * * * * * * * * * * overlay play * * * * * * * * * * * * * * * * * * */
  position: absolute; /*hover cards*/
@@ -433,9 +456,9 @@ border-radius: 15px;
         width: 30%;
         max-width: 180px;
     }
-    .ln .user .hide{
+    /*.ln .user .hide{
         font-size: 0.8rem;
-    }
+    }*/
 
 }
 @media screen and (max-width:600px) {
@@ -454,14 +477,19 @@ border-radius: 15px;
     }
     .fa-circle-down.l {
          margin: 0 auto; 
-
     }
     .left-nav {
-        width: var(--hbanner);
+        width: 80px;
         justify-content: space-between;
-        min-width: var(--hbanner);
-
+        min-width: 80px;
     }
+    .container.play {
+        min-width: 202px;
+    }
+    .play-mid{
+        min-width: 205px;
+    }
+
     .user {
         margin: 0.5rem 0;
         align-items: center;
@@ -469,7 +497,6 @@ border-radius: 15px;
     }
     .play-left img{
         height: 60%;
-
     }
     .lat-icon img{
         width: var(--hlogo);
@@ -478,18 +505,14 @@ border-radius: 15px;
     .lat-icon{
         padding: var(--padding);
     }
-    .play-icon i{
-        font-size: 15px;
-        padding: 0; 
-        flex-shrink: 0; 
-        flex-grow: 0; 
-        width: 30px;
-        line-height: 30px;
-    }
+
     .play-icon.play{
         margin: 0 auto;
     }
 
+    .play-right .container{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:450px) {
     .card {
@@ -515,9 +538,9 @@ border-radius: 15px;
 .genere:hover .high{
     background-color: chartreuse;
 }
-.genere:hover{
+/*.genere:hover, .hover:hover {
     background-color: var(--colhover);
-}
+}*/
 .genere:hover span{
     color:white;
 }
